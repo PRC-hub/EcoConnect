@@ -11,6 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import "../App.css";
 import Video from '../components/video/video';
 import Chatbot from "../components/ChatBot/chatbot";
+import Bot from "../components/ChatBot/Bot";
 import FeedSection from "./Feed";
 import CreateReelSection from "./CreateReels";
 import Profile from "./Profile";
@@ -200,7 +201,10 @@ const Blog = () => {
             )}
             <div className={`main-content ${!isLoggedIn ? 'full-width' : ''} ${isSidebarFolded ? 'sidebar-folded' : ''}`}>
                 {renderContent()}
-                {isLoggedIn && <Chatbot />}
+                {isLoggedIn && <Bot/>}
+                <div className="AIchatbot">
+                    <img src="images\roboticon.gif" alt="Chatbot"/>
+                </div>
             </div>
         </div>
     );

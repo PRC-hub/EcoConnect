@@ -2,7 +2,7 @@
   "name": "sidepopup",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://PRC-hub.github.com/Eco-Connect",
+  "homepage": "https://PRC-hub.github.io/EcoConnect",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

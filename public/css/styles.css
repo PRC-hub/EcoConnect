@@ -35,6 +35,19 @@ header{
     color: #12f13f;
 }
 
+
+.logo img {
+    position: fixed;
+    border: #4CAF50 5px double;
+    background: rgba(178, 244, 173, 0.5); 
+    border-radius: 10% 40%;
+    padding: 5px;
+    bottom: 20px;
+    right: 20px;
+    height: 55px;
+    width: 55px;
+  }
+
 /* Navigation Styles */
 .nav-links {
     display: flex;
@@ -619,25 +632,25 @@ animation: slideIn 2s ease-in-out;
 .carousel .list .item .topic{
     color: #f1683a;
 }
-.carousel .list .item .buttons{
+/* .carousel .list .item .homesearch{
     display: grid;
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
     gap: 5px;
     margin-top: 20px;
 }
-.carousel .list .item .buttons button{
+.carousel .list .item .homesearch button{
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
 }
-.carousel .list .item .buttons button:nth-child(2){
+.carousel .list .item .homesearch button:nth-child(1){
     background-color: transparent;
     border: 1px solid #fff;
     color: #eee;
-}
+} */
 /* thumbnail */
 .thumbnail{
     position: absolute;
@@ -716,7 +729,7 @@ animation: slideIn 2s ease-in-out;
 .carousel .list .item:nth-child(1) .content .title,
 .carousel .list .item:nth-child(1) .content .topic,
 .carousel .list .item:nth-child(1) .content .des,
-.carousel .list .item:nth-child(1) .content .buttons
+.carousel .list .item:nth-child(1) .content .homesearch
 {
     transform: translateY(50px);
     filter: blur(20px);
@@ -739,7 +752,7 @@ animation: slideIn 2s ease-in-out;
 .carousel .list .item:nth-child(1) .content .des{
     animation-delay: 1.6s!important;
 }
-.carousel .list .item:nth-child(1) .content .buttons{
+.carousel .list .item:nth-child(1) .content .homesearch{
     animation-delay: 1.8s!important;
 }
 /* create animation when next click */

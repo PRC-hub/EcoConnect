@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Chatbot from "../components/ChatBot/chatbot";
+import Bot from "../components/ChatBot/Bot";
 import { Link, Element } from "react-scroll";
 import {useInView} from "framer-motion"; // Import framer-motion
 import { TbMoodSearch } from "react-icons/tb";
@@ -60,11 +61,13 @@ const Home = () => {
 
 
   return (
-    <div>
+    <div> 
+      
       <header>
         <div className="logo">
           <span>Eco</span>
           <span>Connect</span>
+          <img  src="images\roboticon.gif" alt="Chatbot"/>
         </div>
         <nav>
           <ul className="nav-links">
@@ -296,7 +299,7 @@ const Home = () => {
           <p>© Copyright 2023 EcoConnect. All Rights Reserved.</p>
         </div>
       </footer>
-      <Chatbot/>
+      <Bot/>
     </div>
   );
 };
